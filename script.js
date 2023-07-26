@@ -1,6 +1,6 @@
 'use strict';
 let diap = Number(
-  prompt('Введіть діапазон цифр для відгадування (максимально можливо число):')
+  prompt('Введіть діапазон цифр для відгадування (максимально можливе число):')
 );
 document.querySelector('.diap').textContent = diap;
 let secretNum = Math.trunc(Math.random() * diap) + 1;
