@@ -7,8 +7,16 @@
 }
 
 html {
-  font-size: 40%;
+  font-size: 60%;
 }
+
+/* #gradient {
+  background: #ff0000;
+  background: -moz-radial-gradient(center, ellipse cover, #ff0000, #ffcfcf);
+  width: 600px;
+  height: 400px;
+  border: 1px solid #333;
+} */
 
 body {
   font-family: 'Press Start 2P', sans-serif;
@@ -116,4 +124,38 @@ h1 {
 
 .label-score {
   margin-bottom: 2rem;
+}
+
+body.game-over {
+  background-color: #ff0000; /* Червоний фон при закінченні гри */
+  animation: gameOverAnimation 0.5s ease;
+}
+
+@keyframes gameOverAnimation {
+  0% {
+    background-color: #ff0000;
+  }
+  50% {
+    background-color: #000000;
+  }
+  100% {
+    background-color: #ff0000;
+  }
+}
+
+body.game-win {
+  background-color: rgb(9, 250, 21); /* Червоний фон при закінченні гри */
+  animation: gameWinAnimation 0.5s ease;
+}
+
+@keyframes gameWinAnimation {
+  0% {
+    background-color: rgb(9, 250, 21);
+  }
+  50% {
+    background-color: #000000;
+  }
+  100% {
+    background-color: rgb(9, 250, 21);
+  }
 }
