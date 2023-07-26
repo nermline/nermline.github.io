@@ -55,6 +55,7 @@ document.querySelector('.check').addEventListener('click', function () {
       document.querySelector('.score').textContent = score;
     } else {
       document.querySelector('.guess-message').textContent = 'Гру закінчено!';
+      document.querySelector('.score').textContent = 0;
     }
 
     // To low
@@ -73,3 +74,4 @@ document.querySelector('.check').addEventListener('click', function () {
     }
   }
 });
+//test git
