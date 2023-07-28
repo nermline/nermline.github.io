@@ -1,31 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Вгадай Число!</title>
+    <title>Свинья</title>
   </head>
   <body>
-    <header>
-      <h1>Вгадай Число!</h1>
-      <p class="between">(Між 1 та <span class="diap">?</span>)</p>
-      <button class="btn again">Спочатку!</button>
-      <div class="question">???</div>
-    </header>
     <main>
-      <section class="left">
-        <input type="number" class="number-input" />
-        <button class="btn check">Перевірити!</button>
+      <section class="player player--0 player--active">
+        <h2 class="name" id="name--0">Игрок 1</h2>
+        <p class="score" id="score--0">47</p>
+        <div class="current">
+          <p class="current-label">Текущие очки</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
       </section>
-      <section class="right">
-        <p class="guess-message">Починай вгадувати!</p>
-        <p class="label-score">Спроби: <span class="score">20</span></p>
-        <p class="label-highscore">
-          Найкращий результат: <span class="highscore">0</span>
-        </p>
+      <section class="player player--1">
+        <h2 class="name" id="name--1">Игрок 2</h2>
+        <p class="score" id="score--1">31</p>
+        <div class="current">
+          <p class="current-label">Текущие очки</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
       </section>
+
+      <img src="dice1.png" alt="Playing dice" class="dice" />
+      <button class="btn btn--new">🐷 Новая игра</button>
+      <button class="btn btn--roll">🎲 Бросить кубик</button>
+      <button class="btn btn--hold">👌 Оставить</button>
     </main>
     <script src="script.js"></script>
   </body>
